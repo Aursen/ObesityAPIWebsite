@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Workshop1</title>
+  <meta name="author" content="Aursen">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+</head>
+
+<body class="has-background-white-ter">
+  <nav class="navbar is-info" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="mainNavBar">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="mainNavBar" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item title is-5" id="logo" href="/">
+            Obesity API
+          </a>
+
+          <a class="navbar-item" href="/">
+            Accueil
+          </a>
+
+          <a class="navbar-item" href="/faq.html">
+            FAQ
+          </a>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <a class="button is-info is-light" href="https://github.com/Aursen/ObesityAnalysis">
+              <span class="icon">
+                <i class="fab fa-github"></i>
+              </span>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" id="content">
+    <div class="content">
+      <h2 class="subtitle">A quoi cela sert-il ?</h2>
+      <p>Nous pouvons prédire l'obésité d'une personne en fonction de ses habitudes de vie. Nous n'avons besoin ni de
+        la taille ni du poids.</p>
+      <h2 class="subtitle">Comment puis-je faire une prédiction ?</h2>
+      <p>Pour ça il suffit juste de faire une requête vers l'API avec :</p>
+      <ul>
+        <li>Genre: '1' (femme) or '2' (homme)</li>
+        <li>Âge: entier</li>
+        <li>Antécédents familiaux avec surcharge pondérale: 0 (non) or 1 (oui)</li>
+        <li>Fréquence de consommation des légumes : 1 (jamais) ou 2 (parfois) ou 3 (toujours)</li>
+        <li>Nombre de repas principaux : 2 (entre 1 et 2) ou 3 (trois) ou 4 (plus de 3)</li>
+        <li>Consommation de nourriture entre les repas : 0 (non) ou 1 (parfois) ou 2 (fréquemment) ou 3 (toujours)</li>
+        <li>Consommation d'eau quotidienne : 1 (moins de 1 L) ou 2 (entre 1 et 2 L) ou 3 (plus de 2 L)</li>
+        <li>Fréquence de l'activité physique : 0 (non) ou 1 (1-2 jours) ou 2 (2-4 jours) ou 3 (4-5 jours)</li>
+        <li>Consommation d'alcool : 0 (non) ou 1 (parfois) ou 2 (fréquemment) ou 3 (toujours)</li>
+      </ul>
+      <p>Ou sinon juste utiliser le website du projet.</p>
+    </div>
+  </div>
+
+  <footer class="footer has-background-info-light has-text-info" id="footer">
+    <div class="content has-text-centered">
+      <p>
+        By Jean Marchand
+      </p>
+    </div>
+  </footer>
+  <script src="scripts/navbar.js"></script>
+</body>
+
+</html>
