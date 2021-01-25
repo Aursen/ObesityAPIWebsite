@@ -1,4 +1,4 @@
-# ObesityAPIWebsite
+# WorkshopWebArchitecture
 
 ## Introduction
 
